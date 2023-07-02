@@ -1,0 +1,1148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url(C:\Users\Home\AppData\Local\Temp\atom-118019-14536-1ea9572.rtm9ozuxr\league-spartan.zip\LeagueSpartan-Bold.otf);
+    font-family: League Spartan;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.main-text {
+    display: block;
+    width: 500px;
+    padding: 15px;
+    margin: auto;
+    border-top: 2px solid #F2F2F2;
+    text-align: center;
+}
+
+.main h2 {
+    font-family: League Spartan, Helvetica, sans-serif;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.main p {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.main img {
+    width: 350px;
+    padding: 50px;
+    display: block;
+    margin: auto;
+}
+
+/*Animation for the div container start.*/
+
+#spaceAnimationHeading {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: 100;
+    display: absolute;
+    margin-top: -100px;
+    margin-bottom: 20px;
+}
+
+#spaceCite {
+    font-size: 30px;
+}
+
+#spaceCite::before {
+    content: "\2014 \2009";
+}
+
+#animationContainer {
+    padding: 120px;
+    min-height: 500px;
+    animation-name: divBackground;
+    -webkit-animation-name: divBackground;
+    animation-duration: 5s;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    -webkit-animation-duration: 5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes divBackground {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: #343538;
+    }
+}
+
+@-webkit-keyframes divBackground {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: #343538;
+    }
+}
+
+#box {
+    background-color: #592d00;
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    animation-name: box;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-name: box;
+    -webkit-animation-duration: 5s;
+    cursor: pointer;
+}
+
+#clickMe {
+    color: white;
+    font-family: League Spartan, Helvetica, sans-serif;
+    font-size: 27px;
+    text-align: center;
+    vertical-align: center;
+    line-height: 250px;
+}
+
+@keyframes box {
+    from {
+        border-radius: 0px;
+        background-color: #592d00;
+        position: relative;
+    }
+
+    to {
+        border-radius: 1000px;
+        background-color: #f99939;
+        position: relative;
+    }
+}
+
+@-webkit-keyframes box {
+    from {
+        border-radius: 0px;
+        background-color: #592d00;
+    }
+
+    to {
+        border-radius: 1000px;
+        background-color: #f99939;
+    }
+}
+
+#cratersContainer {
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+    animation-duration: 15s;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 15s;
+}
+
+.crater {
+    width: 25px;
+    height: 25px;
+    background-color: #d86c00;
+    border-radius: 100px;
+    margin-left: 170px;
+    margin-top: 70px;
+    position: absolute;
+}
+
+.crater2 {
+    width: 35px;
+    height: 35px;
+    background-color: #b75c01;
+    border-radius: 100px;
+    margin-left: 50px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.crater3 {
+    width: 15px;
+    height: 15px;
+    background-color: #723f0d;
+    border-radius: 100px;
+    margin-left: 80px;
+    opacity: 0.6;
+    margin-top: 180px;
+    position: absolute;
+}
+
+.crater4 {
+    width: 19px;
+    height: 19px;
+    background-color: #aa6817;
+    border-radius: 100px;
+    margin-left: 170px;
+    margin-top: 155px;
+    position: absolute;
+}
+
+.crater5 {
+    width: 40px;
+    height: 40px;
+    background-color: #aa6817;
+    opacity: 0.4;
+    border-radius: 100px;
+    margin-left: 125px;
+    margin-top: 100px;
+    position: absolute;
+}
+
+#starsContainer {
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+    animation-duration: 15s;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 15s;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: white;
+    border-radius: 500px;
+    margin-top: -250px;
+}
+
+.star2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    border-radius: 500px;
+    margin-top: -140px;
+    left: 30%;
+}
+
+.star3 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    border-radius: 500px;
+    margin-top: -250px;
+    right: 35%;
+}
+
+.star4 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: white;
+    border-radius: 500px;
+    margin-top: -70px;
+    right: 20%;
+}
+
+.star5 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: white;
+    border-radius: 500px;
+    margin-top: -170px;
+    right: 10%;
+}
+
+.star6 {
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background-color: white;
+    border-radius: 500px;
+    margin-top: -90px;
+    left: 15%;
+}
+
+.star7 {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    background-color: white;
+    border-radius: 500px;
+    margin-top: 35px;
+    right: 35%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*Animation for the div container end.*/
+
+nav {
+    position: absolute;
+    right: 0px;
+}
+
+#logo {
+    font-family: League Spartan, Helvetica, sans-serif;
+    font-size: 30px;
+    float: left;
+    position: absolute;
+    padding: 25px;
+}
+
+i {
+    display: block;
+    margin-left: 1px;
+}
+
+#logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.link {
+    position: relative;
+}
+
+.link:after {
+    content: '';
+    position: absolute;
+    bottom: -.4em;
+    left: 50%;
+    right: 50%;
+    height: 1px;
+    background: currentColor;
+    -webkit-transition: all ease .2s;
+    transition: all ease .2s;
+}
+
+.link:hover:after {
+    left: 0;
+    right: 0;
+    height: 2px;
+}
+
+.link:before {
+    position: absolute;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    left: -10px;
+    color: #eee;
+    opacity: .3;
+    font-weight: 100;
+    font-size: .8em;
+}
+
+nav ul li {
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    list-style-type: none;
+}
+
+nav ul {
+    float: right;
+    display: block;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.heropage {
+    background: url(image/i1.jpg);
+    background-size: cover;
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.herotext h1 {
+    margin-bottom: 15px;
+    font-family: League Spartan;
+    color: white;
+    font-size: 55px;
+}
+
+.herotext button:focus {
+    outline: 0;
+}
+
+.herotext button {
+    font-size: 20px;
+    width: 190px;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    border-radius: 500px;
+    border: 2px solid white;
+    color: white;
+    height: 57px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.herotext button:hover {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    transition: all 0.2s linear;
+}
+
+.item {
+    background-color: #343538;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 15px;
+    width: 330px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: League Spartan, Helvetica, sans-serif;
+    flex-basis: 25%;
+}
+
+.item-2 {
+    background-color: #343538;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 15px;
+    width: 330px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: League Spartan, Helvetica, sans-serif;
+    flex-basis: 25%;
+}
+
+.item-3 {
+    background-color: #343538;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 15px;
+    width: 330px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: League Spartan, Helvetica, sans-serif;
+    flex-basis: 25%;
+}
+
+.mail {
+    color: gray;
+    margin-top: -15px;
+
+}
+
+.profile {
+    width: 150px;
+    border-radius: 100px;
+    padding: 15px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+p {
+    margin-bottom: 17px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 17px;
+    height: 53px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    width: 160px;
+    border-radius: 100px;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    margin-bottom: 25px;
+    transition: all 0.2s linear;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+section {
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+}
+
+article {
+    padding: 70px;
+    width: 1000px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+blockquote:before {
+    display: block;
+    content: "\201C";
+    font-style: normal;
+    font-size: 150px;
+    font-family: League Spartan;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -70px;
+    color: #7a7a7a;
+}
+
+blockquote cite {
+    color: #999999;
+    font-size: 17px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
+}
+
+blockquote {
+    margin-top: 70px;
+    width: 800px;
+    margin-bottom: 70px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: italic;
+    display: block;
+}
+
+.secondimg {
+    width: 220px;
+    border-right: 2px solid #F2F2F2;
+    float: left;
+    margin-top: -15px;
+    margin-right: 50px;
+    margin-left: -20px;
+}
+
+.content2 {
+    padding: 100px;
+    width: 1100px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+
+.content2 h2 {
+    font-size: 35px;
+    font-family: League Spartan, Helvetica, sans-serif;
+}
+
+.content2 p {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .item {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .item-2 {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .item-3 {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+}
+
+
+.tabFacts {
+    padding: 80px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border-bottom: 2px solid #F2F2F2;
+}
+
+.tabFacts h1 {
+    font-family: League Spartan, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabFacts p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+.tabButton {
+    border: none;
+    margin-top: 30px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 500px;
+    border: 2px solid #343538;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #343538;
+    font-size: 17px;
+    margin-right: 20px;
+    transition: all 0.2s linear;
+}
+
+.tabButton:hover {
+    background-color: #1f2021;
+    color: white;
+    border: 2px solid #1f2021;
+}
+
+#button1 {
+    background-color: black;
+}
+
+.tabContainer {
+    max-width: 900px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+#tabContainer2,
+#tabContainer3 {
+    display: none;
+    transition: all 0.2s linear;
+}
+
+.tabContainer img {
+    width: 170px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+#tabContainer2 img {
+    width: 170px;
+    float: right;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.tabText {
+    width: 720px;
+    padding: 25px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.tabContainer h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.tabContainer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: left;
+}
+
+form {
+    width: 700px;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+form h1 {
+    font-family: League Spartan, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+input {
+    display: block;
+    margin-bottom: 15px;
+    max-width: 700px;
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    width: 700px;
+    border: 2px solid #D8D8D8;
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+textarea {
+    width: 700px;
+    box-sizing: border-box;
+    height: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #D8D8D8;
+    font-size: 17.5px;
+    font-weight: 100;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea::placeholder {
+    font-size: 17.5px;
+    font-weight: 100;
+    color: gray;
+    letter-spacing: .5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+form h3 {
+    text-align: left;
+    padding: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+#form-button {
+    border: none;
+    background-color: #343538;
+    color: white;
+    padding: 12px;
+    font-size: 17px;
+    margin-top: 22px;
+    width: 700px;
+    border-radius: 500px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.2s linear;
+}
+
+#form-button:hover {
+    background-color: black;
+}
+
+.form {
+    border-bottom: 2px solid #F2F2F2;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #343538;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 30%;
+    text-align: center;
+}
+
+footer h1 {
+    font-family: League Spartan, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+footer h3 {
+    font-weight: 300;
+    margin-top: 15px;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    transition: all 0.2s linear;
+}
+
+
+
+
+/*All Media Queries, for Responsive layout */
+
+
+
+/*Hero Image*/
+@media screen and (max-width: 514px) {
+    .heropage {
+        height: 80vh;
+        width: 100vw;
+    }
+
+    .herotext h1 {
+        font-size: 40px;
+        padding: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .herotext button {
+        font-size: 18.5px;
+    }
+}
+
+/*Hero Image*/
+
+
+/*Lorem Ipsum Content-1*/
+@media screen and (max-width: 514px) {
+    .main img {
+        width: 80%;
+        padding: 0;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: 5px;
+        margin-right: 5px;
+        display: block;
+        margin: auto;
+        padding-bottom: 80px;
+    }
+
+    .main-text {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .main-text h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .main-text p {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/*Lorem Ipsum Content-1 end*/
+
+
+/*Animation Div Container*/
+@media screen and (max-width: 945px) {
+    .star2 {
+        width: 35px;
+        height: 35px;
+        left: 20%;
+    }
+
+    .star3 {
+        width: 20px;
+        height: 20px;
+        left: 25%;
+    }
+
+    .star6 {
+        width: 27px;
+        height: 27px;
+        left: 10%;
+        margin-top: 30px;
+    }
+
+    .star7 {
+        width: 16px;
+        height: 16px;
+        margin-top: 35px;
+        right: 25%;
+    }
+}
+
+@media screen and (max-width: 617px) {
+    #starsContainer {
+        display: none;
+    }
+
+    #box {
+        display: block;
+        margin: auto;
+        margin-left: -35px;
+        margin-top: 50px;
+    }
+
+    #spaceAnimationHeading {
+        width: 95%;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #spaceCite {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+/*Animation Div Container Over*/
+
+
+/*Blockquote Section*/
+@media screen and (max-width: 1071px) {
+    blockquote:before {
+        font-size: 70px;
+        margin-left: 10px;
+    }
+
+    blockquote {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    article {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 881px) {
+    blockquote:before {
+        font-size: 70px;
+        margin-left: 10px;
+    }
+
+    blockquote {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    article {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/*Blockquote Section*/
+
+/*Lorem Ipsum Content-2*/
+@media screen and (max-width: 1071px) {
+    .secondimg {
+        border-right: none;
+        width: 300px;
+        padding: 0;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        display: block;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin: auto;
+        float: none;
+    }
+
+    .SecondText {
+        width: 80%;
+        display: block;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1053px) {
+    .secondimg {
+        display: block;
+        margin: auto;
+    }
+
+    .content2 {
+        width: 100%;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/*Lorem Ipsum Content-2*/
+
+@media screen and (max-width: 993px) {
+    .tabFacts img {
+        float: none;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+
+    .tabContainer img {
+        float: none;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+
+    #tabContainer2 img {
+        float: none;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+
+    .tabButton {
+        margin-bottom: -15px;
+    }
+
+    .tabText {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+}
+
+/*form section*/
+@media screen and (max-width: 732px) {
+    .form h1 {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    form {
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-left: 5px;
+        margin-right: 5px;
+        display: block;
+        margin: auto;
+    }
+
+    form input {
+        width: 95%;
+        display: block;
+        margin: auto;
+    }
+
+    form textarea {
+        width: 95%;
+        display: block;
+        margin: auto;
+    }
+
+    form h3 {
+        width: 95%;
+        display: block;
+        margin: auto;
+        text-align: left;
+    }
+
+    #form-button {
+        width: 95%;
+        text-align: center;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .footer-products-section {
+        display: none;
+    }
+}
+
+
+/*form section*/
+
+/*All the Media Queries are above and within this container */
