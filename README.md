@@ -1,4 +1,5 @@
 # OCTANET_JUNE
 
-Task One :- Landing Page 😁😁😁
-Task One :- To Do List 😊😊😊
+Task 1 :- Landing Page 😁😁😁
+<br>
+Task 2 :- To Do List 😊😊😊
