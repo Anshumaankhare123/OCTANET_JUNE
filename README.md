@@ -12,3 +12,7 @@ Task 2 :- To Do List 😊😊😊
 
 
 <br>
+
+Task 2 :- Clone a Website
+<br>
+![image](https://github.com/Anshumaankhare123/OCTANET_JUNE/assets/94692766/a70f48c8-7230-402e-89e7-a76c270acf9e)
